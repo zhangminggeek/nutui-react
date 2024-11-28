@@ -103,6 +103,7 @@ import { Picker } from '@nutui/nutui-react-taro'
 | --- | --- | --- | --- |
 | text | 选项的文字内容 | `string` \| `number` | `-` |
 | value | 选项对应的值，且唯一 | `string` \| `number` | `-` |
+| disabled | 是否禁用 | `boolean` | `false` |
 | children | 用于级联选项 | `Array` | `-` |
 
 ## 主题定制

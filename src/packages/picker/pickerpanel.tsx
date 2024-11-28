@@ -114,7 +114,9 @@ const InternalPickerPanel: ForwardRefRenderFunction<
   }
 
   const setChooseValue = (move: number) => {
-    chooseItem?.(options?.[Math.round(-move / lineSpacing)], keyIndex)
+    const option = options?.[Math.round(-move / lineSpacing)]
+    if (option.disabled) return
+    chooseItem?.(option, keyIndex)
   }
 
   // 开始滚动
@@ -268,7 +270,7 @@ const InternalPickerPanel: ForwardRefRenderFunction<
               <div
                 className={`nut-picker-roller-item ${
                   isHidden(index + 1) && 'nut-picker-roller-item-hidden'
-                }`}
+                } ${item.disabled && 'nut-picker-roller-item-disabled'}`}
                 style={{
                   transform: `rotate3d(1, 0, 0, ${
                     -rotation * (index + 1)

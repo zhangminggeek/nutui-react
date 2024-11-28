@@ -103,6 +103,7 @@ Cancel the 3D display effect by setting `threeDimensional`, and control the dura
 | --- | --- | --- | --- |
 | text | Text of column | `string` \| `number` | `-` |
 | value | Value of column | `string` \| `number` | `-` |
+| disabled | Whether to disable | `boolean` | `false` |
 | children | Cascader Option | `Array` | `-` |
 
 ## Theming

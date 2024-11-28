@@ -119,6 +119,10 @@
     color: $picker-item-text-color;
     font-size: $picker-item-text-font-size;
     text-align: center;
+
+    &-disabled {
+      color: $picker-item-text-color-disabled;
+    }
   }
 
   &-item {

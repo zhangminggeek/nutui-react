@@ -584,6 +584,10 @@ $picker-item-text-color: var(
   --nutui-picker-item-text-color,
   $color-text
 ) !default;
+$picker-item-text-color-disabled: var(
+  --nutui-picker-item-text-color,
+  $color-text-disabled
+) !default;
 $picker-item-active-text-color: var(
   --nutui-picker-item-active-text-color,
   $color-text

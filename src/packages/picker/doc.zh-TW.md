@@ -103,6 +103,7 @@ import { Picker } from '@nutui/nutui-react'
 | --- | --- | --- | --- |
 | text | 選項的文字內容 | `string` \| `number` | `-` |
 | value | 選項對應的值，且唯一 | `string` \| `number` | `-` |
+| disabled | 是否禁用 | `boolean` | `false` |
 | children | 用於級聯選項 | `Array` | `-` |
 
 ## 主題定製

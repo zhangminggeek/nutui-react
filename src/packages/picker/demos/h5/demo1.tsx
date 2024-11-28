@@ -22,7 +22,7 @@ const Demo1 = () => {
       { value: 8, text: '大庆市' },
       { value: 9, text: '绥化市' },
       { value: 10, text: '潍坊市' },
-      { value: 12, text: '乌鲁木齐市' },
+      { value: 12, text: '乌鲁木齐市', disabled: true },
     ],
   ]
   const changePicker = (list: any[], option: any, columnIndex: number) => {
